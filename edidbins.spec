@@ -23,7 +23,7 @@ Provides five binary edid files to give to support kernel edid loading feature
 
 %build
 
-make
+make -k
 
 %install
 
