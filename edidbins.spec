@@ -11,7 +11,7 @@ BuildArch:	noarch
 #The tarball for these files was generated from the cloned sources from the above url. The files were copied to a directory edidbins and then compressed with "tar -Jcvf kernel-edidbins edidbins/*" It is unlikely that these sources will change. Proprietry edid's should have their own package.
 
 Source0:	kernel-edidbins-%{version}.%{release}.tar.xz
-BuildRequires:	objcopy
+BuildRequires:	binutils
 BuildRequires:	dos2unix
 
 %description
