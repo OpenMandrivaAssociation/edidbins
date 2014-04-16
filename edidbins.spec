@@ -12,6 +12,8 @@ BuildArch:	noarch
 #The files were copied to a directory edidbins and then compressed with "tar -Jcvf kernel-edidbins edidbins/*"  
 #It is unlikely that these sources will change. Proprietry edid's should have their own package.
 Source0:	kernel-edidbins-%{version}.%{release}.tar.xz
+BuildRequires:		objcopy
+BuildRequires:		dos2unix
 
 %description
 
