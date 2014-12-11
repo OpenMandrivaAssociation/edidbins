@@ -22,6 +22,8 @@ Provides five binary edid files to give to support kernel edid loading feature
 %setup -q -n %{name}
 
 %build
+export CC=gcc
+
 %make 
 
 %install
