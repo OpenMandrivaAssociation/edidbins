@@ -1,7 +1,7 @@
 Summary:	Generic monitor edid files
 Name:		edidbins
-Version:	1
-Release:	4
+Version:	1.1
+Release:	1
 Group:		System/Kernel and hardware
 License:	LGPLv2+
 Url:		https://github.com/torvalds/linux/tree/master/Documentation/EDID
@@ -9,7 +9,7 @@ BuildArch:	noarch
 
 #The tarball for these files was generated from the cloned sources from the above url. The files were copied to a directory edidbins and then compressed with "tar -Jcvf kernel-edidbins edidbins/*" It is unlikely that these sources will change. Proprietary edid's should have their own package.
 
-Source0:	kernel-edidbins-%{version}.%{release}.tar.xz
+Source0:	kernel-edidbins-%{version}.tar.xz
 BuildRequires:	binutils
 BuildRequires:	dos2unix
 BuildRequires:	util-linux
