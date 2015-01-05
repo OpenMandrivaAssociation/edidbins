@@ -21,10 +21,12 @@ Provides five binary edid files to give to support kernel edid loading feature
 %prep
 %setup -q -n %{name}
 
-%build
-export CC=gcc
+#force gcc
+sed -i 's/@cc/@gcc/' Makefile
 
-%make 
+%build
+
+%make
 
 %install
 mkdir -p %{buildroot}/lib/firmware/edid
