@@ -1,7 +1,7 @@
 Summary:	Generic monitor edid files
 Name:		edidbins
 Version:	1.1
-Release:	2
+Release:	3
 Group:		System/Kernel and hardware
 License:	LGPLv2+
 Url:		https://github.com/torvalds/linux/tree/master/Documentation/EDID
