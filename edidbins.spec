@@ -1,7 +1,7 @@
 Summary:	Generic monitor edid files
 Name:		edidbins
 Version:	1.1
-Release:	5
+Release:	6
 Group:		System/Kernel and hardware
 License:	LGPLv2+
 Url:		https://github.com/torvalds/linux/tree/master/Documentation/EDID
@@ -19,14 +19,14 @@ Provides five binary edid files to give to support kernel edid loading feature
 
 
 %prep
-%setup -q -n %{name}
+%autosetup -n %{name} -p1
 
 #force gcc
 sed -i 's/@cc/@gcc/' Makefile
 
 %build
 
-%make
+%make_build
 
 %install
 mkdir -p %{buildroot}/lib/firmware/edid
